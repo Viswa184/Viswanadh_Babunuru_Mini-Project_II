@@ -1,0 +1,55 @@
+<nav class="navbar navbar-light bg-primary">
+    <div class="container fluid">
+        <img src="https://cdn.vectorstock.com/i/1000x1000/47/23/cooking-and-chef-logo-vector-30824723.webp" alt=""  
+            width="90" height="90">
+        <h1>Surabi Restaurent </h1>
+        <div class="d-flex">
+            <button routerLink="/login" class="btn btn-danger mx-2">Logout</button>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div>
+        <table class="table mt-3">
+            <tr>
+                <th *ngFor="let column of columnNames">
+                    {{column}}
+                </th>
+            </tr>
+            <tr *ngFor="let food of menuItems">
+                <td>{{food.item_id}}</td>
+                <td>{{food.item_name}}</td>
+                <td>{{food.item_price}}</td>
+                <td><img src="{{food.item_img}}" alt="" height="60px" width="60px"></td>
+                <td>
+                    <div>
+                        <button (click)="onClick(food)" class="btn btn-secondary">AddToOrder</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br>
+    </div>
+    <div class="container" *ngIf="selectedItems.length > 0">
+    <h4><b>Your Cart Items</b></h4>
+    <table class="table mt-3">
+      <tr>
+        <th>Item Id</th>
+        <th>Item Name</th>
+        <th>Item Price</th>
+        <th>Item Quantity</th>
+        <th>Item Total Price</th>
+      </tr>
+      <tr *ngFor="let food of selectedItems">
+        <td>{{food.itemId}}</td>
+        <td>{{food.name}}</td>
+        <td>{{food.price}}</td>
+        <td> <input type="number" value="{{food.quantity}}" (change)="updateTotalPrice($event, food)"></td>
+        <td>{{food.totalPrice}}</td>
+      </tr>
+    </table>
+    <div>
+        <button (click)="saveCartItems()" class="btn btn-success">Pay Bill</button>
+    </div>
+  </div>
+</div>

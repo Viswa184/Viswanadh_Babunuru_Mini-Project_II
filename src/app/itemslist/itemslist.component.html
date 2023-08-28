@@ -1,0 +1,68 @@
+<nav class="navbar navbar-light bg-primary">
+    <div class="container-fluid">
+      <img src="https://cdn.vectorstock.com/i/1000x1000/47/23/cooking-and-chef-logo-vector-30824723.webp" alt=""  
+            width="90" height="90">
+        <h1 style="color:aliceblue">Items List</h1>
+        <div class="d-flex">
+            <button (click)="clickAddItem()" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success">Add Item</button>
+            <button routerLink="/login" class="btn btn-danger mx-2">Logout</button>
+        </div>
+    </div>
+</nav>
+
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th scope="col">Item ID</th>
+            <th scope="col">Item Name</th>
+            <!--<th scope="col">Item Image</th>-->
+            <th scope="col">Item Price</th><!---->
+            <th scope="col">Update/Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of ItemDetails">
+            <td>{{row.id}}</td>
+            <td>{{row.itemName}}</td>
+            <!--<td><img src="{{row.itemImage}}" alt="" height="60px" width="60px"></td>
+            <td>{{row.ItemImage}}</td>-->
+            <td>{{row.itemPrice}}</td>
+            <td>
+                <button (click)="onEdit(row)" style="color:aliceblue;" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-info">Edit</button>
+                <button (click)="deleteItem(row)" class="btn btn-danger mx-3">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Items List</h1>
+          <button type="button" formControlName="id" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="formValue">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Item Name</label>
+                  <input type="text" formControlName="itemName" class="form-control" id="exampleInputEmail1">
+                </div>
+                <!--<div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Item Image</label>
+                  <input type="url" formControlName="itemImage" class="form-control" id="exampleInputEmail1">
+                </div>-->
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Item Price</label>
+                  <input type="text" formControlName="itemPrice" class="form-control" id="exampleInputPassword1">
+                </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" *ngIf="showAdd" (click)="postItemDetails()" class="btn btn-primary">Add Item</button>
+          <button type="button" *ngIf="showUpdate" (click)="updateItemDetails()" class="btn btn-primary">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>

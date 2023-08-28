@@ -1,0 +1,193 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "itemName": "Idly",
+      "itemPrice": "30"
+    },
+    {
+      "id": 2,
+      "itemName": "Masala Dosa",
+      "itemPrice": "50"
+    },
+    {
+      "id": 3,
+      "itemName": "Panipuri",
+      "itemPrice": "30"
+    },
+    {
+      "id": 4,
+      "itemName": "Oats Dosa",
+      "itemPrice": "50"
+    },
+    {
+      "id": 5,
+      "itemName": "Gobi Manchuria",
+      "itemPrice": "120"
+    },
+    {
+      "id": 6,
+      "itemName": "Babycorn Manchuria",
+      "itemPrice": "100"
+    },
+    {
+      "id": 7,
+      "itemName": "Mushroom Friedrice",
+      "itemPrice": "200"
+    },
+    {
+      "id": 8,
+      "itemName": "Lassi",
+      "itemPrice": "175"
+    },
+    {
+      "id": 9,
+      "itemName": "Chapathi",
+      "itemPrice": "8"
+    },
+    {
+      "id": 10,
+      "itemName": "butternon",
+      "itemPrice": "12"
+    },
+    {
+      "id": 11,
+      "itemName": "Kaju curry",
+      "itemPrice": "180"
+    },
+    {
+      "id": 12,
+      "itemName": "Panner curry",
+      "itemPrice": "140"
+    }
+  ],
+  "signupUser": [
+    {
+      "name": "krish",
+      "mobile": 9791721800,
+      "email": "krishna@.com",
+      "password": "12345",
+      "role": "admin",
+      "id": 1
+    },
+    {
+      "name": "Sudhakar",
+      "mobile": 8972340678,
+      "email": "sudha12@gmail.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "name": "siva",
+      "mobile": 875394026,
+      "email": "siv@gmail.com",
+      "password": "1234567",
+      "id": 3
+    },
+    {
+      "name": "Hira",
+      "mobile": 875864026,
+      "email": "hira@gmail.com",
+      "password": "123",
+      "id": 4
+    },
+    {
+      "name": "pavani",
+      "mobile": 879994026,
+      "email": "pavs@gmail.com",
+      "password": "1234",
+      "id": 5
+    },
+    {
+      "name": "krishna",
+      "mobile": 7483284398,
+      "email": "krishna",
+      "password": "11111",
+      "id": 6
+    },
+    {
+      "name": "krish",
+      "mobile": 9791721800,
+      "email": "krishna@.com",
+      "password": "12345",
+      "id": 7
+    }
+  ],
+  "item": [
+    {
+      "item_id": 1,
+      "item_name": "Idly",
+      "item_img": "https://th.bing.com/th/id/R.020687e5b43b0948f1ef48cb8ee33e58?rik=HwomASR0vehL0Q&riu=http%3a%2f%2fchennaimemes.in%2fwp-content%2fuploads%2f2018%2f03%2fidly.jpg&ehk=0hQeVTaV9lqdc08KTRKSB84ApK71vuKzeJhgc4xvkTM%3d&risl=&pid=ImgRaw&r=0",
+      "item_price": "25"
+    },
+    {
+      "item_id": 2,
+      "item_name": "Masala Dosa",
+      "item_img": "https://th.bing.com/th/id/OIP.7MXyanhEk-muCrR30O3KOQHaFV?pid=ImgDet&rs=1",
+      "item_price": "50"
+    },
+    {
+      "item_id": 3,
+      "item_name": "Panipuri",
+      "item_img": "https://th.bing.com/th/id/OIP.8k0a1nSSBVpy-3LTA3kjMwHaF3?pid=ImgDet&rs=1",
+      "item_price": "30"
+    },
+    {
+      "item_id": 4,
+      "item_name": "Oats Dosa",
+      "item_img": "https://www.indianhealthyrecipes.com/wp-content/uploads/2016/09/oats-dosa-recipes.jpg",
+      "item_price": "50"
+    },
+    {
+      "item_id": 5,
+      "item_name": "Gobi Manchuria",
+      "item_img": "https://th.bing.com/th/id/R.80d1ddf1fd3953ac897825970b62f8e7?rik=r0v4O1wAAtH4aQ&riu=http%3a%2f%2f4.bp.blogspot.com%2f-Af-Jh4hDXuY%2fTtdsAAzEANI%2fAAAAAAAAAZE%2fOkohcNmiTf8%2fs1600%2fGobi%2bManchurian.jpg&ehk=AoiReoaLcFjMspLZeSD%2fvEP0YTlaOQRAhUeT%2fPSTqxY%3d&risl=&pid=ImgRaw&r=0",
+      "item_price": "120"
+    },
+    {
+      "item_id": 6,
+      "item_name": "Babycorn Manchuria",
+      "item_img": "https://img-global.cpcdn.com/001_recipes/8d754b978d9419b4/1200x630cq70/photo.jpg",
+      "item_price": "100"
+    },
+    {
+      "item_id": 7,
+      "item_name": "Mushroom Friedrice",
+      "item_img": "https://th.bing.com/th/id/OIP.ARpQgxpJpW2fS6NwohFpVgHaJ4?pid=ImgDet&rs=1",
+      "item_price": "200"
+    },
+    {
+      "item_id": 8,
+      "item_name": "Lassi",
+      "item_img": "https://th.bing.com/th/id/R.20042190b650871cfccf00cd06898b06?rik=3AZAoJngXsgegA&riu=http%3a%2f%2fwww.chefpriyanka.com%2fwp-content%2fuploads%2f2013%2f03%2flassi5.jpg&ehk=qpfmqzsJeXBH6R%2bT4czoB0ZrFg7twEc8seQCmyAVq00%3d&risl=&pid=ImgRaw&r=0",
+      "item_price": "175"
+    },
+    {
+      "item_id": 9,
+      "item_name": "Chapathi",
+      "item_img": "https://th.bing.com/th/id/OIP.iABVK73UYywVNC4mweoCjgHaGN?pid=ImgDet&rs=1",
+      "item_price": "8"
+    },
+    {
+      "item_id": 10,
+      "item_name": "butternon",
+      "item_img": "https://qph.fs.quoracdn.net/main-qimg-93af99277a8a1d050c73f519224363c0",
+      "item_price": "12"
+    },
+    {
+      "item_id": 11,
+      "item_name": "Kaju curry",
+      "item_img": "https://th.bing.com/th/id/R.024f3a7371ffa2f0a2fea3cd979eee38?rik=83VSIgbV1HKrxg&riu=http%3a%2f%2fwww.yummyfoodrecipes.in%2fresources%2fpicture%2forg%2fCreamy-Kaju-Curry.jpg&ehk=W7OtRFkRPcHuEHvvAC8ybXnnJv5RE3woD5QR2aCx%2fb4%3d&risl=&pid=ImgRaw&r=0",
+      "item_price": "180"
+    },
+    {
+      "item_id": 12,
+      "item_name": "Panner curry",
+      "item_img": "https://i0.wp.com/vegecravings.com/wp-content/uploads/2016/08/kadai-paneer-gravy-recipe-step-by-step-instructions.jpg?fit=3075%2C2747&quality=65&strip=all&ssl=1",
+      "item_price": "140"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
